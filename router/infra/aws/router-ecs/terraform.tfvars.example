@@ -1,0 +1,30 @@
+# AWS Configuration
+aws_region = "us-east-1"
+
+# VPC Configuration
+vpc_id = "vpc-12345678"
+
+# Subnet Configuration
+public_subnet_ids = [
+  "subnet-12345678",
+  "subnet-87654321"
+]
+
+private_subnet_ids = [
+  "subnet-abcdef12",
+  "subnet-21fedcba"
+]
+
+# Service Configuration
+service_desired_count = 2
+
+# Environment
+environment = "dev"
+
+# Tags
+tags = {
+  Service     = "router"
+  Environment = "dev"
+  ManagedBy   = "terraform"
+  Owner       = "barbershop-team"
+}
