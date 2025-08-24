@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1a012b];
+    background: linear-gradient(135deg, #1a012b 0%, #2d0a4a 50%, #1a012b 100%);
+    min-height: 100vh;
+  }
+
+  /* Ensure input fields have readable text */
+  input,
+  textarea,
+  select {
+    @apply text-gray-900;
+  }
+
+  /* Ensure form labels are readable */
+  label {
+    @apply text-gray-700;
+  }
+}
+
+@layer components {
+  .premium-card {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl shadow-2xl;
+  }
+
+  .premium-button {
+    @apply bg-gradient-to-r from-[#b17a50] to-[#d4a574] text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+
+  .premium-button-outline {
+    @apply border-2 border-[#b17a50] text-[#b17a50] font-semibold px-6 py-3 rounded-lg hover:bg-[#b17a50] hover:text-white transition-all duration-300;
+  }
+
+  .premium-text {
+    @apply text-[#b17a50];
+  }
+
+  .premium-border {
+    @apply border-[#b17a50];
+  }
+
+  .premium-gradient {
+    background: linear-gradient(135deg, #b17a50 0%, #d4a574 50%, #b17a50 100%);
+  }
+}
